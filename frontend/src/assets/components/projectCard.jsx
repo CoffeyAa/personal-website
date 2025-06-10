@@ -1,4 +1,5 @@
 import React from "react";
+import GithubLink from "./githubLink";
 
 const ProjectCard = ({title, imgSrc, bioText, link}) => {
     return (
@@ -10,9 +11,7 @@ const ProjectCard = ({title, imgSrc, bioText, link}) => {
                 <h2 style={{textDecoration: 'underline'}}>{title}</h2>
                 <h3>{bioText}</h3>
             </div>
-            <a href={link} target="_blank" rel="noopener noreferrer">
-                Visit my GitHub
-            </a>
+            <GithubLink link={link}/>
         </div>
     )
 }

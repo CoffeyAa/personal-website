@@ -125,3 +125,7 @@
   word-wrap: break-word;  /* Ensure long words break */
   align-self: flex-start;
 }
+
+.page {
+  padding: 0 100px;
+}
