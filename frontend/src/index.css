@@ -1,0 +1,42 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a basic font and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5f656b;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for page content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Basic links styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 25px;
+  color: #000000;
+}

@@ -1,0 +1,127 @@
+.main.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #8b8a8d;
+  color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  font-size: 18px;
+  border-bottom: 1px solid #000000;
+}
+
+.nav a:hover {
+  color: #000000;
+}
+
+.app.name {
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: left;
+  flex: 1;
+}
+
+.profile.pic {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #000000; 
+  object-fit: cover; 
+  margin-right: 10px;
+}
+
+.bio.card {
+  padding: 1rem;
+  background-color: #b4b3b3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+  text-align: left;
+  margin: 1rem;
+}
+
+.bio.text {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f0eeee;
+  border-radius: 8px;
+  min-height: 150px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.pdf.card {
+  width: 100%;
+  height: 700px;
+  padding: 1rem;
+  background-color: #b4b3b3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 1rem;
+}
+
+.pdf.preview {
+  width: 100%;
+  height: 550px;
+  border: none;
+  margin-top: 10px;
+}
+
+.download.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #515253;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download.btn:hover {
+  background-color: #161616;
+  cursor:grab;
+}
+
+.documents.card {
+  flex-direction: row;
+  display: flex;
+}
+
+.project.card {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #b4b3b3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 1rem;
+}
+
+
+.project.pic {
+  width: 10rem;      /* Fixed size */
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid black;
+  flex-shrink: 0;     /* Prevent image from shrinking */
+}
+
+.card.description {
+  flex: 1;
+  min-width: 0;           /* Allow wrapping instead of growing indefinitely */
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word;  /* Ensure long words break */
+  align-self: flex-start;
+}
