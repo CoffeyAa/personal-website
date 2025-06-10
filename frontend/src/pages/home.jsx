@@ -5,7 +5,7 @@ import BioCard from '../assets/components/bioCard'
 
 const Home = () => {
     return (
-        <div>
+        <div className="page">
             <div>
                 <BioCard/>
             </div>
