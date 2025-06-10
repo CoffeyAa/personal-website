@@ -129,3 +129,15 @@
 .page {
   padding: 0 100px;
 }
+
+.contact.page {
+  padding: 1rem 500px;
+}
+
+.contact.label {
+  color: black;
+}
+
+.contact.field.container {
+  padding-bottom: 0px;
+}
