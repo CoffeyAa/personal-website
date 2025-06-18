@@ -105,6 +105,7 @@
   text-align: center;
   flex: 1;
   margin: 1rem;
+  min-width: none;
 }
 
 
@@ -127,11 +128,14 @@
 }
 
 .page {
-  padding: 0 100px;
+  padding: 0 1rem;
 }
 
 .contact.page {
-  padding: 1rem 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact.label {

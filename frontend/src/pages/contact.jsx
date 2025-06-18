@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import api from "../api";
 
 const Contact = () => {
     const [formData, setFormData] = useState(
@@ -17,9 +18,23 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
-        
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await api.post("/send-email", formData);
+
+            if (response.status === 200) {
+                alert("Email has been sent. I will try and respond within 5 business days. Thank you, Aaron Coffey.");
+                setFormData();
+            } else {
+                alert("Something went wrong. Please try again later.");
+            }
+            } catch (error) {
+            console.error("Error sending email:", error);
+            alert("Server error. Please try again.");
+        }
+    };
 
     return (
         <div className="contact page">
@@ -39,7 +54,7 @@ const Contact = () => {
                     ) : (
                         <input
                             type="text"
-                            name={{field}}
+                            name={field}
                             value={formData.field}
                             onChange={handleChange}
                             style={{ width: '100%', padding: '10px', backgroundColor: 'white', border: '1px solid #ccc', borderRadius: '4px', }}
