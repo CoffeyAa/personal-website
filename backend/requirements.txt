@@ -1,0 +1,6 @@
+uvicorn
+fastapi
+pydantic
+jinja2
+dotenv
+email-validator
